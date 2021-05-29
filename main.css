@@ -142,5 +142,12 @@ li {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+    .image1, .image2 , .image3{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .row{
+        padding: 15px;
+    }
 }
 
