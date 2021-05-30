@@ -11,7 +11,10 @@
 <title>Cloud</title>
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://use.fontawesome.com/5106f37262.js"></script>
+ 
 </head>
 
 <body>
@@ -47,41 +50,69 @@
 </header>
 
 
-<div class="container">
-    <div class="row">
+<div class="container" >
             <div class="image1">
-            <h2>PICTURE_1</h2>
+                <!-- Swiper -->
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1565273601018-d1da7cfed4f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1044&q=80" alt="slider image 1" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1580691746056-4badd831b86e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="" />
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-            <div class="image2">
-            <h2>PICTURE_2</h2>
-            </div>
-    </div>
-    <div class="row">
-        <div class="image3">
-        <h2>PICTURE_3</h2>
+        <div class="bg" >
+            <svg viewBox="0 0 100 100" id="bg" >
+            </svg>
+            <a class="download2" href="#">Login</a>
         </div>
-    </div>
+
 </div>
+ <footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li>Contact</li>
+            <li>Fees</li>
+            <li>Security</li>
+            <li>About</li>
+            <li style="padding-bottom:15px">Developers</li>
+          </ul>
+        </div>
+      </div>
 
-<script>
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
-
-</script>
+    	<div class="footer_float" >
+    		<h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icontwitter" title="Linkedin"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>				
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; Copyright 2021 -  All rights reserved.</p>
+		</div>
+	</div> 
+</footer>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
